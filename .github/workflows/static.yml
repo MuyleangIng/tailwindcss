@@ -43,7 +43,7 @@ jobs:
 
       - name: Send email notification on success
         if: success()
-        uses: actions-smtp@v1
+        uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 587
@@ -55,3 +55,4 @@ jobs:
             URL: ${{ steps.deployment.outputs.page_url }}
           to: muyleanging@gmail.com
           from: ${{ secrets.GMAIL_USERNAME }}  # Use GitHub Secret
+          secure: true  # Use TLS
