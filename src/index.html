@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    
-    <div class="container mx-auto">
-        <div class="bg-white py-24 sm:py-32">
-            <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
-              <div class="max-w-xl">
-                <h2 class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
-                <p class="mt-6 text-lg/8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
-              </div>
-              <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-                <li>
-                  <div class="flex items-center gap-x-6">
-                    <img class="size-16 rounded-full" src="images/image.png" alt="">                      <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Leslie Alexander</h3>
-                      <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
-                    </div>
-                  </div>
-                </li>
-          
-                <!-- More people... -->
-              </ul>
-            </div>
-          </div>
-          
+<body class="bg-gray-100">
+
+  <!-- Container -->
+  <div class="container mx-auto px-4 py-16">
+    <!-- Heading Section -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        We're a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.
+      </p>
     </div>
+
+    <!-- Team Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Team Member 1 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Lindsay Nelson">
+        <h3 class="text-xl font-semibold text-gray-900">Lindsay Nelson</h3>
+        <p class="text-sm text-gray-500">Gourtrey Henry</p>
+        <p class="text-sm text-gray-500">Tom Cook</p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Whitney Francis">
+        <h3 class="text-xl font-semibold text-gray-900">Whitney Francis</h3>
+        <p class="text-sm text-gray-500">Copywriter</p>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Leonard Krasner">
+        <h3 class="text-xl font-semibold text-gray-900">Leonard Krasner</h3>
+        <p class="text-sm text-gray-500">Seller Designer</p>
+      </div>
+
+      <!-- Team Member 4 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Franzard Desiqeer">
+        <h3 class="text-xl font-semibold text-gray-900">Franzard Desiqeer</h3>
+        <p class="text-sm text-gray-500">Designer</p>
+        <p class="text-sm text-gray-500">Director of Product</p>
+      </div>
+
+      <!-- Team Member 5 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Flegal Mice">
+        <h3 class="text-xl font-semibold text-gray-900">Flegal Mice</h3>
+        <p class="text-sm text-gray-500">Principal Designer</p>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
