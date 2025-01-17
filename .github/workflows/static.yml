@@ -29,7 +29,7 @@ jobs:
           # Move the contents of the src folder to the root
           mv src/* .
           # Copy the images folder to the root
-          cp -r ../images .
+          cp -r images .
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
