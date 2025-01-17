@@ -40,3 +40,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Send email notification on success
+        if: success()
+        uses: actions-smtp@v1
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: surveybox.service@gmail.com
+          password: gezz coen cvea rgbv
+          subject: "Deployment Successful - GitHub Pages"
+          body: |
+            Your deployment to GitHub Pages was successful!
+            URL: ${{ steps.deployment.outputs.page_url }}
+          to: muyleanging@gmail.com
+          from: surveybox.service@gmail.com        
