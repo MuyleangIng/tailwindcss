@@ -6,6 +6,5 @@
   "scripts": {
     "start": "concurrently \"npx tailwindcss -i ./src/input.css -o ./src/styles.css --watch\" \"npm run live\"",
     "live": "live-server --port=3000"
-    "prod": "npx tailwindcss -i ./src/input.css -o ./src/styles.css"
   }
 }
